@@ -3,8 +3,7 @@ let torontoHoods = "https://raw.githubusercontent.com/cosmicdreams/Mapping_Earth
 let sevenDayEarthquakeData = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
 
 // Grabbing our GeoJSON data.
-d3.json(torontoHoods).then(function(data) {
-    console.log(data);
+d3.json(sevenDayEarthquakeData).then(function(data) {
   // Creating a GeoJSON layer with the retrieved data.
   L.geoJSON(data).addTo(map);
 });
